@@ -1,0 +1,83 @@
+:root {
+  --font-scale: 1;
+}
+body{
+  overflow-x: hidden;
+}
+@media only screen and (max-width: 1000px) {
+  :root {
+    --font-scale: 1.8;
+  }
+}
+
+
+.input-field{
+  margin-right: calc(1.5rem * var(--font-scale)) !important;
+  margin-bottom: calc(1.5rem * var(--font-scale)) !important;
+}
+
+.input-field textarea, 
+.input-field input {
+  border: calc(2px * var(--font-scale)) solid #ccc !important;
+  border-radius: calc(10px * var(--font-scale)) !important;
+  padding: calc(10px * var(--font-scale)) !important;
+  font-size: calc(16px * var(--font-scale)) !important;
+  
+}
+
+.input-field label {
+  color: #000000 !important;
+  font-size: calc(18px * var(--font-scale)) !important;
+  top: calc(-15px * var(--font-scale)) !important;
+  left: calc(15px * var(--font-scale)) !important;
+  font-weight: bold !important;
+  margin-bottom: calc(2rem * var(--font-scale)) !important;
+
+}
+
+#codeBgColor:focus + label,
+#codeBgColor:not(:placeholder-shown) + label {
+  top: calc(-10px * var(--font-scale));
+  font-size: calc(13px * var(--font-scale));
+  color: #000000;
+}
+
+.progress {
+  display: none;
+
+}
+button[type="submit"] {
+  background-color: #2196f3;
+  font-size: calc(16px * var(--font-scale)) !important;
+  font-weight: bold !important;
+  text-transform: none;
+
+}
+button[type="submit"]:hover {
+  background-color: #6096f3;
+}
+
+
+body {
+    font-size: calc(18px * var(--font-scale)) !important;
+  }
+[type="checkbox"] + span:not(.lever) {
+  font-size: calc(14px * var(--font-scale)) !important;
+}
+
+label{
+  margin-bottom:70px;
+}
+
+#codeFontSize{
+  margin-bottom:100px;
+}
+
+
+.active{
+  width:400%;
+}
+
+select{
+  display: block;
+}
